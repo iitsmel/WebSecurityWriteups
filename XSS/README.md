@@ -34,5 +34,11 @@ self-XSS: Only triggers when user send out XSS payloads.
 - Any out-of-band routes via which an attacker can deliver data into the application. 
 
 ## [DOM-based XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based)
+DOM-based XSS vulnerabilities usually arise when JavaScript takes data from an attacker-controllable source, such as the URL, and passes it to a sink that supports dynamic code execution, such as eval() or innerHTML.
 
+This enables attackers to execute malicious JavaScript, which typically allows them to hijack other users' accounts.
+
+**Keywords**
+- Javascript
+- source, sink, taint
 
