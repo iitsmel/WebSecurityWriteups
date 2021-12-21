@@ -22,7 +22,9 @@
 **Difference between reflected XSS and stored XSS, self-XSS.**
 
 reflected XSS: Embeds input from an HTTP request into immediate response.
+
 stored XSS: Embeds input from an HTTP request into later response. 
+
 self-XSS: Only triggers when user send out XSS payloads.
 
 ## [Stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored)
@@ -30,3 +32,7 @@ self-XSS: Only triggers when user send out XSS payloads.
 - The URL file path.
 - HTTP request headers that might not be exploitable in relation to reflected XSS.
 - Any out-of-band routes via which an attacker can deliver data into the application. 
+
+## [DOM-based XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based)
+
+
