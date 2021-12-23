@@ -82,11 +82,14 @@ document.write('<img src="/resources/images/tracker.gif?"><svg onload=alert(1)>=
 
 It will caused alert pop up being generated.
 
+<br>
+
 ## Pseudo Protocol JavaScript
 ### Readings
 [When do I need to specify the JavaScript protocol?](https://stackoverflow.com/questions/2321469/when-do-i-need-to-specify-the-javascript-protocol)
+- Article: [The useless javascript: pseudo-protocol](https://crisp.tweakblogs.net/blog/313/the-useless-javascript-pseudo-protocol.html)
 
-[The useless javascript: pseudo-protocol](https://crisp.tweakblogs.net/blog/313/the-useless-javascript-pseudo-protocol.html)
+<br>
 
 ### Knowledge
 **What is Pseudo Protocol?**
@@ -96,4 +99,14 @@ Something that can be accessed in the manner of a protocol but is not in fact a 
 **What is Pseudo Protocol about?**
 
 It's about Anchor element ```<a>```.
+
+<br>
+
+## Backlinks Alert
+### Readings
+[What is: Backlink](https://www.wpbeginner.com/glossary/backlinks/)
+
+
+
+
 
