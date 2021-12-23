@@ -45,6 +45,7 @@ Article:
 
 ### Knowledge
 **What is sink and source?**
+
 sink: funciton, where the source value is passed
 
 source: value, accepts data
@@ -83,9 +84,16 @@ It will caused alert pop up being generated.
 
 ## Pseudo Protocol JavaScript
 ### Readings
-[The useless javascript: pseudo-protocol]
+[When do I need to specify the JavaScript protocol?](https://stackoverflow.com/questions/2321469/when-do-i-need-to-specify-the-javascript-protocol)
+
+[The useless javascript: pseudo-protocol](https://crisp.tweakblogs.net/blog/313/the-useless-javascript-pseudo-protocol.html)
 
 ### Knowledge
 **What is Pseudo Protocol?**
+
 Something that can be accessed in the manner of a protocol but is not in fact a protocol.
+
+**What is Pseudo Protocol about?**
+
+It's about Anchor element ```<a>```.
 
