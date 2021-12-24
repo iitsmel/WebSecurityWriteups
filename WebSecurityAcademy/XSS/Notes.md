@@ -113,6 +113,16 @@ It's about Anchor element ```<a>```.
 [alert() is dead, long live print()](https://portswigger.net/research/alert-is-dead-long-live-print)
 
 ## decodeURIComponent
-## Readings
+### Readings
 [JavaScript decodeURIComponent()](https://www.w3schools.com/jsref/jsref_decodeuricomponent.asp)
+
+<br>
+
+## Constructor
+### Readings
+[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function#constructor)
+
+
+
+
 

