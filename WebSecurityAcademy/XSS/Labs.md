@@ -54,9 +54,47 @@ Readings:
 <br>
 
 ## Reflected DOM XSS
+### Readings
+[Why my javascript alert() code is running before ```<h1>``` html tag?](https://stackoverflow.com/questions/53499153/why-my-javascript-alert-code-is-running-before-h1-html-tag)
+
+Essential: Find the JavaScript file named "searchResult.js".
+
+- searchResult.js:
+    - ```eval('var searchResultsObj = ' + this.responseText);``` 
+
+The following JSON is the key to solving this lab.
+```
+{
+    "searchTerm":"INPUT", 
+    "results":[]
+} 
+``` 
 
 
+```INPUT``` is the text from search box.
 
+**Enter ```\"-alert(1)}//``` in search box will solve this lab.**
+
+<br>
+
+### Explanation
+By injecting ```\```, it will make the following input unescapable.
+
+The first double-quotes following behind the slash is for closing searchTerm.
+
+The ```-``` is for seperating alert() from others.
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147344228-a8a000ed-d39f-4894-bba3-dc846f22461d.png">
+
+```alert(1)``` is for creating alert.
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147344233-d4574cb2-492a-45e3-854c-09148b517fc7.png">
+
+```}``` is for closing JSON.
+
+```//``` is preventing eacaping alert. 
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147344235-7f6b9b4a-afc1-49ff-9176-d8a6c4f6e377.png">
 
 
 
