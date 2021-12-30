@@ -76,3 +76,20 @@ By altering the tag ```<h1``` into other tags, might ended up being able to use 
 <img width="500" src="https://user-images.githubusercontent.com/68285613/147732371-b7f0aed4-0777-4b5a-a56f-d01af8214cbf.png">
 
 SVG is XML based, which means that every element is available within the SVG DOM.
+
+<br>
+
+## 3
+**Explain**
+
+```input = input.replace(/->/g, '_');```
+
+
+<br>
+
+**Solve**
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147734370-19e288b3-e257-41cf-adac-8948e52d21ba.png">
+
+
+
