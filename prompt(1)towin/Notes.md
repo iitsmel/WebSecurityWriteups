@@ -96,6 +96,69 @@ decodeURIComponent : Decode a URL component.
 - [RegExp.prototype.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
 - [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
+<br>
+
+<br>
+
+## Regular Expressions ( Regex )
+**JavaScript Regular Expressions**
+-   let re = /ab+c/;
+-   let re = new RegExp('ab+c');
+
+**Escaping**
+
+When using any of the special characters literally, it's necessary to escape the special characters by putting a **backslash (```\```)** in front of it.
+
+e.g,
+- ```/a\*b/```
+    - "a" followed by "*" followed by "b".
+    - The backslash "escapes" the "*", making it literal instead of special.
+
+
+<br>
+
+**Special characters in regular expressions.**
+
+[Character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+```
+\, ., \cX, \d, \D, \f, \n, \r, \s, \S, \t, \v, \w, \W, \0, \xhh, \uhhhh, \uhhhhh, [\b]	
+```
+
+
+
+[Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+```
+^, $, x(?=y), x(?!y), (?<=y)x, (?<!y)x, \b, \B
+```
+
+
+
+[Groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+```
+(x), (?:x), (?<Name>x), x|y, [xyz], [^xyz], \Number
+```
+
+
+
+[Quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+```
+*, +, ?, x{n}, x{n,}, x{n,m}
+```
+
+
+[Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+```
+\p{UnicodeProperty}, \P{UnicodeProperty}
+```
+
+
+
+<br>
+
+**Readings**
+- [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
 
 <br>
 
