@@ -112,6 +112,8 @@ It's about Anchor element ```<a>```.
 ### Readings
 [alert() is dead, long live print()](https://portswigger.net/research/alert-is-dead-long-live-print)
 
+<br>
+
 ## decodeURIComponent
 ### Readings
 [JavaScript decodeURIComponent()](https://www.w3schools.com/jsref/jsref_decodeuricomponent.asp)
