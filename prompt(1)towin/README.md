@@ -169,11 +169,36 @@ I don't have a domain, so was not able to use " http://prompt.ml%2f@DOMAIN_NAME/
 ## 5
 **Explain**
 
-<img width="1000" src="https://user-images.githubusercontent.com/68285613/147775277-f3fc0964-8540-4037-ba0e-963930d58243.png">
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147785032-5ff8fff2-f538-4c28-b131-91b61667e15f.png">
 
 ```JavaScript
 input = input.replace(/>|on.+?=|focus/gi, '_');
 ```
 
+Need to find a way to put ```prompt(1)``` int ```<input>```.
+
+<br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147786300-8a5b2081-2aae-4ded-bcc4-3d1a777cd7d6.png">
+
+```JavaScript
+" type=image src onerror="prompt(1)
+```
+
+This is not working, because ```replace(/>|on.+?=|focus/gi, '_')```. 
+
+But by moving ```="prompt(1)``` to next line, it will work.
+
+<br>
+
+**Solve**
+
+```JavaScript
+" type=image src onerror
+="prompt(1)
+```
+
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147786303-774c6d38-bdce-4241-87a2-665344fece7b.png">
 
 
