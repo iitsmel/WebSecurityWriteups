@@ -201,6 +201,11 @@ But by moving ```="prompt(1)``` to next line, it will work.
 
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/147786303-774c6d38-bdce-4241-87a2-665344fece7b.png">
 
+<br>
+
+<br>
+
+
 ## 6
 **Explain**
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/147860405-ca3b7431-5fac-448f-a2fe-bcd2d25f699a.png">
@@ -238,9 +243,63 @@ By changing ```name``` to ```action```, it successfully perform prompt(1).
 javascript:prompt(1)#{"action":"Matt"}
 ```
 
-
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/147876796-2bd172ef-af1d-45be-acbf-6c5469c7329b.png">
 
+<br>
 
+<br>
+
+## 7
+**Explain**
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147877157-64a3b957-cefd-4cf9-bff4-33cf3a3cc4cb.png">
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147877514-0e592b7d-0ecc-44f6-a845-420cebdd6924.png">
+
+However there's a 12 charaters limit.
+
+So perhaps JavaScript is the place to use prompt(1).
+
+Thus should use ```<script></script>```.
+
+<br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147878530-77e63aa2-3f90-4f2b-97ae-489cf99a8a03.png">
+
+- var segments = input.split('#');
+
+What if put # into script?
+
+HTML source will be split.
+
+<br>
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147878636-6a3a22a0-feb8-4c80-af0a-ee61deb7b7c4.png">
+
+The # works like this.
+
+<br>
+
+
+
+It's a rather difficult concept for me to understand, so I use [test.js](https://github.com/iitsmel/WebSecurityWriteups/blob/main/prompt(1)towin/tests.js) to test the result.
+
+<br>
+
+**Readings**
+- [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+<br>
+
+**Solve**
+```HTML
+"><script>`#`;prompt(1)`#`</script>
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147890015-ab7ca6c7-6bcb-4bda-8dec-913cfbb390c3.png">
+
+<br>
+
+<br>
 
 
