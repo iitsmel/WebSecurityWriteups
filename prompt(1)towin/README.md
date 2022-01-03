@@ -302,4 +302,29 @@ It's a rather difficult concept for me to understand, so I use [test.js](https:/
 
 <br>
 
+## 8
+**Explain**
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147890264-2e1e9bf2-b6de-4e9d-b4f1-6158158983a4.png">
+- input = input.replace(/[\r\n</"]/g, '');
+
+Will have to find another way to do link break.
+
+First find the Unicode of line seperate, then use the function in this challenge to get the correct solution. 
+
+e.g. [test.js](https://github.com/iitsmel/WebSecurityWriteups/blob/main/prompt(1)towin/tests.js)
+
+<br>
+
+**Readings**
+- [Notes on Afrikaans](https://www.unicode.org/udhr/n/notes_afr.html)
+
+<br>
+
+**Solve**
+```HTML
+' prompt(1) -->'
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147932877-50fc038e-23e4-4c3e-a027-51e5afcd4a92.png">
+
 

