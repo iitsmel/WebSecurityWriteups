@@ -328,3 +328,41 @@ e.g. [test.js](https://github.com/iitsmel/WebSecurityWriteups/blob/main/prompt(1
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/147932877-50fc038e-23e4-4c3e-a027-51e5afcd4a92.png">
 
 
+<br>
+
+<br>
+
+
+## 9
+**Explain**
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/147934841-ce1bef61-8d6c-4abe-a960-cfc5c65cbb19.png">
+
+From the code below, I know this is something Unicode related.
+- input = input.replace(/<([a-zA-Z])/g, '<_$1');
+
+From the code below, I know this is something ASCII code related.
+- input = input.toUpperCase();
+
+I use a very simple yet inefficient way to figure this out.
+
+Just simply paste all Unicode characters representing the letter 's' until I found the right one.
+
+<br>
+
+**Readings**
+- [Awesome symbols and characters in a bash prompt](https://unix.stackexchange.com/questions/25903/awesome-symbols-and-characters-in-a-bash-prompt)
+- [an XSS payload without Alphabetic Characters[alert(1)], for bypass some filters](https://twitter.com/trbughunters/status/1336681843417116672)
+- [ascii code](https://www.ascii-code.com)
+- [List of Unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+
+<br>
+
+**Solve**
+
+```HTML
+<ſvg onload=&#112;&#114;&#111;&#109;&#112;&#116;&#40;&#49;&#41;>
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148045784-23c47fcf-e0c5-46ed-af58-95c13ffbac75.png">
+

