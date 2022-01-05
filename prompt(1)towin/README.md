@@ -366,3 +366,38 @@ Just simply paste all Unicode characters representing the letter 's' until I fou
 
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/148045784-23c47fcf-e0c5-46ed-af58-95c13ffbac75.png">
 
+<br>
+
+<br>
+
+## 10
+**Explain**
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148266758-77ff9616-5597-4ecf-82cc-def406b93c25.png">
+
+From the input (mel's input), the HTML scource showed ```<script>mels%20input</script>```.
+
+It did not show ```'```, so it is possible that ```encodeURIComponent()``` ignored ```'```.
+
+Hence the solution: ```p'rompt(1)```, ```'``` seperated the original replace().
+
+
+<br>
+
+**Readings**
+- [Unicode and URI encoding, decoding and escaping in JavaScript](https://stackoverflow.com/questions/2596483/unicode-and-uri-encoding-decoding-and-escaping-in-javascript)
+- [What does the regular expression /_/g mean?](https://stackoverflow.com/questions/6052616/what-does-the-regular-expression-g-mean)
+- [What is the meaning of the 'g' flag in regular expressions?](https://stackoverflow.com/questions/12993629/what-is-the-meaning-of-the-g-flag-in-regular-expressions)
+
+<br>
+
+**Solve**
+```JavaScript
+p'rompt(1)
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148267944-18fce407-be52-4f26-8d82-b8e523c9991e.png">
+
+
+
+
