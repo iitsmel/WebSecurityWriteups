@@ -399,5 +399,38 @@ p'rompt(1)
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/148267944-18fce407-be52-4f26-8d82-b8e523c9991e.png">
 
 
+<br>
 
+<br>
+
+## 11
+**Explain**
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148568267-1a3880a4-d0bd-4b99-af99-d4dcdecb9b99.png">
+
+First, use ```"``` to create another string.
+
+Secondly, execute prompt(1) in double quote.
+
+prompt() returns the value in it or returns null, thus should look for something that returns value.
+
+I read the documents in MDN Web Docs and found the in operator, it returns true if the specified property is in the specified object or its prototype chain.
+
+The solution is ```"(prompt(1))```.
+
+<br>
+
+**Readings**
+- [Execute any script in double quotes](https://stackoverflow.com/questions/9349205/execute-any-script-in-double-quotes)
+- [Javascript array return is adding double quotes?](https://stackoverflow.com/questions/34163254/javascript-array-return-is-adding-double-quotes)
+- [in operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in)
+<br>
+
+**Solve**
+
+```JavaScript
+"(prompt(1))"
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148568271-e25ea88a-398b-497f-baa2-6b3cd9361de5.png">
 
