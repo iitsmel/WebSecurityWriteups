@@ -434,3 +434,40 @@ The solution is ```"(prompt(1))```.
 
 <img width="1000" src="https://user-images.githubusercontent.com/68285613/148568271-e25ea88a-398b-497f-baa2-6b3cd9361de5.png">
 
+
+<br>
+
+<br>
+
+## 12
+**Explain**
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148641726-d419ccdf-337f-47fd-9be6-7ec3dc4c6324.png">
+
+Have to use another way to represent prompt.
+
+Thus I tried to use parseInt to convert prompt into numbers, and use toString to convert it back.
+
+Here's the example, tets.js.
+
+Additionally, I use eval() to convert numbers into string. Because that way, after converting numbers into prompt, js will be able perform prompt(1).
+
+<br>
+
+**Readings**
+- [url-Encode vs Base64 encoding ( usages)?](https://stackoverflow.com/questions/10267597/url-encode-vs-base64-encoding-usages)
+- [Why is the result from (number).toString(32) different from other Base32 encoder implementations?](https://stackoverflow.com/questions/68244112/why-is-the-result-from-number-tostring32-different-from-other-base32-encoder)
+
+<br>
+
+**Solve**
+
+```JavaScript
+eval((867982141).toString(32))(1)
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/148641728-09327872-4d93-4d5d-aa34-052442166d5f.png">
+
+<br>
+
+<br>
+

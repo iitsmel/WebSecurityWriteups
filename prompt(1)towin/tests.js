@@ -52,6 +52,7 @@ function escape(input) {
 console.log(escape("'\u2028prompt(1)\u2028-->'"))
 */
 
+/*
 // 9
 function escape(input) {
     // prevent input from getting out of comment
@@ -69,3 +70,7 @@ console.log(escape("<svg onload=&#112;&#114;&#111;&#109;&#112;&#116;&#40;&#49;&#
 const input = 's';
 
 console.log(input.toLocaleLowerCase());
+*/
+
+// 12
+console.log((parseInt("prompt", 32)));
