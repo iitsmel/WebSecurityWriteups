@@ -72,5 +72,20 @@ const input = 's';
 console.log(input.toLocaleLowerCase());
 */
 
+
+/*
 // 12
 console.log((parseInt("prompt", 32)));
+*/
+
+
+// 13
+/*
+TEXT="PROMPT(1)";
+console.log(TEXT.TOLOWERCASE())
+Text.toUpperCase()
+
+const text = require('utf-16');
+text.encode('prompt');
+console.log(text);
+*/
